@@ -1,9 +1,21 @@
-<div id="popup" aria-hidden="true" class="popup">
+<div id="search" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрити</button>
+			<button data-close type="button" class="popup__close">
+				<img src="@img/header/cross.svg" alt="icon">
+			</button>
 			<div class="popup__text">
-				Text
+				<form action="#" method="get" class="seach-form">
+				
+					<div class="seach-form__body">
+					
+							<input data-required autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Seach ...." class="seach-form__input input">
+						
+						<button type="submit" class="button">
+							<img src="@img/header/search-white.svg" alt="icon">
+						</button>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>

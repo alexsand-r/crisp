@@ -1,1 +1,57 @@
 // Заголовки, загальні БЕМ блоки та інше...
+
+// ----------------------  popup ------------------
+
+.popup {
+
+    // .popup__content
+
+    &__content {
+        
+    }
+
+    // .popup__close
+
+    &__close {
+        margin-bottom: 25px;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    // .popup__text
+
+    &__text {
+    }
+}
+.seach-form {
+  
+    // .seach-form__body
+
+    &__body {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+   
+
+    // .seach-form__input
+
+    &__input {
+        height: 35px;
+        padding: 0px 0px 0px 15px;
+        flex: 1 1 auto;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height:1.0;
+        color: #3F3F3F;
+    }
+}
+.input {
+}
+.button {
+}
+
