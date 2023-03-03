@@ -1,3 +1,74 @@
-//====================================================================================================
+//============================================  obligations  ==============================================
+.page {
+
+    // .page__obligations
+
+    &__obligations {
+    }
+}
+.obligations {
+
+    // .obligations__container
+
+    &__container {
+    }
+
+    // .obligations__body
+
+    &__body {
+        padding: 350px 0px 35px 0px;
+    }
+
+    // .obligations__row
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 130px;
+        row-gap: 15px;
+       @media (max-width: 450px) {
+        padding: 0px 0px 0px 40px;
+       }
+    }
+
+    // .obligations__column
+
+    &__column {
+    }
+
+    // .obligations__item
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    // .obligations__icon
+
+    &__icon {
+        position: relative;
+        top: 2px;
+        left: 0px;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    // .obligations__text
+
+    &__text {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.50; /* 21/14 */
+        display: flex;
+        align-items: flex-start;
+        color: #000000;
+    }
+}
 
 //====================================================================================================
