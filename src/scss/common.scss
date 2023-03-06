@@ -55,3 +55,49 @@
 .button {
 }
 
+// ----------------------------------  title--main -------------------------------------------
+
+.title--main {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 600;
+    @include adaptiveValue("font-size", 86, 32);
+    line-height: 1.12;
+    text-transform: uppercase;
+    color: #000;
+  
+    
+ 
+   
+}
+
+// ----------------------------------  button--transparent  -------------------------------------------
+.button--transparent {
+    display: inline-block;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    @include adaptiveValue("font-size", 18, 14);
+    line-height: 1.50; /* 27/18 */
+    transition: all 0.3s ease 0s;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 14px 48px;
+    border: 2px solid #000000;
+    background: transparent;
+    @media (any-hover:hover) {
+        &:hover {
+            background: #c3c2c2;
+        }
+    }
+   
+}
+
+/*
+	<div class="main-block__btn">
+		<a href="#" class="main-block__button button--transparent">shop now</a>
+	</div>
+*/
