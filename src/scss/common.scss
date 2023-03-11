@@ -70,6 +70,24 @@
  
    
 }
+// ----------------------------------  title -------------------------------------------
+
+.title {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    @include adaptiveValue("font-size",56, 14);
+    font-size: 56px;
+    line-height: 1.29;
+    text-transform: uppercase;
+    color: #000000;
+ 
+   
+}
+
+
+
+
 
 // ----------------------------------  button--transparent  -------------------------------------------
 .button--transparent {
@@ -93,6 +111,9 @@
             background: #c3c2c2;
         }
     }
+    @media (max-width: 991.98px) {
+        padding: 8.5px 24.5px;
+    }
    
 }
 
@@ -100,4 +121,226 @@
 	<div class="main-block__btn">
 		<a href="#" class="main-block__button button--transparent">shop now</a>
 	</div>
+*/
+
+// --------------------------- card-item ( слайдер) ---------------------------------
+
+.item-product {
+    
+
+    // .item-product__control
+
+    &__control {
+      
+        @include adaptiveValue("margin-bottom", 34, 16);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .item-product__title
+
+    &__title {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 2.83;
+        color: #000000;
+    }
+
+    // .item-product__arrow
+
+    &__arrow {
+    }
+}
+.arrow-item-product {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    @media (max-width: 450px) {
+        display: none;
+    }
+
+    // .arrow-item-product__prew
+
+    &__prew {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        //padding: 12px;
+        //gap: 10px;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #828282;
+        transition: all 0.3s ease 0s;
+        @media (any-hover:hover) {
+            &:hover {
+                background: #828282;
+            }
+        }
+    }
+
+    // .arrow-item-product__next
+
+    &__next {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        //padding: 12px;
+        //gap: 10px;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #828282;
+        transition: all 0.3s ease 0s;
+        @media (any-hover:hover) {
+            &:hover {
+                background: #828282;
+            }
+        }
+       
+    }
+}
+
+
+.card-item {
+   
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    // .card-item__picture
+
+    &__picture {
+        margin-bottom: 14px;
+    }
+
+    // .card-item__pic
+
+    &__pic {
+        position: relative;
+        padding-bottom: 127%;
+        img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+    }
+    &__discord {
+        position: absolute;
+        top: 17px;
+        left: 0px;
+        background: #000000;
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 400;
+        @include adaptiveValue("font-size", 18, 12);
+        line-height: 1.50; /* 18/12 */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 3px;
+        color: #fff;
+    }
+    // .card-item__column
+
+    &__column {
+        flex: 1 1 auto;
+    }
+}
+.column-card-item {
+
+    // .column-card-item__subtitle
+
+    &__subtitle {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 600;
+        @include adaptiveValue("font-size", 12, 10);
+        line-height: 1.50; /* 18/12 */
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: #BDBDBD;
+    }
+
+    // .column-card-item__characteristics
+
+    &__characteristics {
+        display: inline-block;
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 300;
+        @include adaptiveValue("font-size", 18, 12);
+        line-height: 1.50; /* 27/18 */
+        color: #000000;
+        @include adaptiveValue("margin-bottom", 18, 4);
+        &:hover {
+            text-decoration: underline;
+        }
+        
+    }
+
+    // .column-card-item__price-box
+
+    &__price-box {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    // .column-card-item__price
+
+    &__price {
+        
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 500;
+        @include adaptiveValue("font-size", 22, 14);
+        line-height: 1.50; /* 33/22 */
+        text-transform: uppercase;
+        color: #000000;
+        span {
+            color: red;
+            @include adaptiveValue("font-size", 22, 14);
+        }
+    }
+
+    &__old {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 400;
+        @include adaptiveValue("font-size", 15, 8);
+        position: relative;
+        line-height: 1.50; /* 12/8 */
+        text-transform: uppercase;
+        color: #828282;
+        transform: translate(0%,10%);
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0px;
+            height: 1px;
+            width: 100%;
+            background: #828282;
+        }
+    }
+}
+
+
+
+
+
+// ------------------------------------ класс для контейнера  -----------------------------------
+/*
+&__container {
+    @media (max-width: 991.98px) {
+        padding: 0px 14px;
+    }
+}
 */
