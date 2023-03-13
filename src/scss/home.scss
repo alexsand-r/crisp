@@ -492,231 +492,6 @@
     }
 }
 */
-// ===========================================  look     ==================================================
-
-.page {
-
-    // .page__look
-
-    &__look {
-    }
-}
-.look {
-
-    // .look__container
-
-    &__container {
-        @media (max-width: 991.98px) {
-            padding: 0px 14px;
-      }
-    }
-
-    // .look__body
-
-    &__body {
-        padding-bottom: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        column-gap: 30px;
-        @media (max-width: 1628px) {
-            flex-direction: column;
-        }
-    }
-
-    // .look__content
-
-    &__content {
-        flex: 0 1 50%;
-       // min-height: 100%;
-       position: relative;
-       display: flex;
-        flex-direction: column;
-        gap: 30px;
-        @media (max-width: 1628px) {
-            width: 100%;
-        }
-    }
-
-    // .look__block
-
-    &__block {
-        display: flex;
-        justify-content: space-between;
-        
-      
-    }
-  
-    
-
-
-    // .look__img
-
-    &__img {
-        flex: 0 1 48%;
-        position: relative;
-       
-      
-        img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    
-    }
-}
-
-&__img-2 {
-    flex: 0 1 50%;
-
-    //background-repeat: no-repeat;
-        position: relative;
-   
-        img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-
-    }
-}
-&__img-3 {
-    img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-    }
-  
-}
-
-
-
-    // .look__column
-
-    &__column {
-    }
-
-    // .look__title
-
-    &__title-1 {
-        font-family: 'Oswald';
-        font-style: normal;
-        font-weight: 600;
-
-        @include adaptiveValue("font-size", 48, 16);
-        line-height: 1.29;
-        text-transform: uppercase;
-        color: #000000;
-        max-width: 221px;
-        
-        &:not(:last-child) {
-        margin: 0px 0px 7px 0px;
-        }
-    }
-    &__title-2 {
-        font-family: 'Oswald';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 48px;
-        line-height: 1.29;
-        text-transform: uppercase;
-        color: #000000;
-       
-        &:not(:last-child) {
-        margin: 0px 0px 7px 0px;
-        }
-    }
-
-    // .look__text
-
-    &__text {
-        font-family: 'Roboto';
-        font-weight: 300;
-        @include adaptiveValue("font-size", 22, 10);
-        line-height: 1.86;
-        letter-spacing: 0.01em;
-        color: #000000;
-       
-        &:not(:last-child) {
-        margin: 0px 0px 50px 0px;
-        }
-    }
-
-    // .look__btn
-
-    &__btn {
-       
-    }
-
-    // .look__button
-
-    &__button {
-    }
-
-    
-
-    // .look__pic
-
- 
-
-    // .look__title-big
-
-    &__title-big {
-        font-family: 'Oswald';
-        font-style: normal;
-        font-weight: 600;
-      
-        @include adaptiveValue("font-size", 96, 26);
-        line-height: 1.15;
-        text-transform: uppercase;
-        color: #131313;
-        max-width: 357px;
-        &:not(:last-child) {
-        margin: 0px 0px 7px 0px;
-        }
-    }
-
-    // .look__text-big
-
-    &__text-big {
-    font-family: 'Roboto';
-    @include adaptiveValue("font-size", 25, 10);
-    line-height: 1.48;
-    letter-spacing: 0.01em;
-    color: #000000;
-    font-weight: 300;
-    &:not(:last-child) {
-    margin: 0px 0px 50px 0px;
-    }
-    }
-}
-.column--1 {
-    padding: 82px 93px 82px 0px;
-}
-.column--2 {
-    
-    padding: 110px 0px 115px 93px;
-    
-}
-.column--3 {
-    padding: 387px 0px 133px 86px;
-}
-.block--1{
-    background: #E9E7E6;
-
-}
-.block--2{
-    background: linear-gradient(90deg, #F7E0D5 0%, #F3DCD2 83.85%, rgb(243, 220, 210) 100%);
-}
-
 //==============================================  offers     ================================================
 
 .page {
@@ -733,70 +508,69 @@
     &__container {
         @media (max-width: 991.98px) {
             padding: 0px 14px;
-           }
+        }
     }
 
     // .offers__body
 
     &__body {
+        padding: 0px 0px 30px 0px;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 30px;
-        padding: 0px 0px 50px 0px;
+        gap: 24px;
+        @media (max-width: 991.98px) {
+            flex-direction: column;
+            padding: 0px 0px 5px 0px;
+        }
     }
 
     // .offers__column
 
     &__column {
         flex: 0 1 50%;
-    }
-
-    // .offers__block-1
-
-    &__block-1 {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background: #E9E7E6;
-        margin-bottom: 30px;
-    }
-
-    // .offers__picture-1
-
-    &__picture-1 {
-        flex: 0 1 48.5%;
-    }
-
-    // .offers__pic-1
-
-    &__pic-1 {
-        position: relative;
-        padding-bottom: 96%;
-        img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        @media (max-width: 991.98px) {
+            flex: 0 1 100%;
         }
     }
 
-    // .offers__content-1
+    // .offers__box
 
-    &__content-1 {
-        flex: 0 1 50%;
-        @include adaptiveValue("padding-right", 69, 5);
-      
+    &__box {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        @include adaptiveValue("margin-bottom", 30, 12);
+        
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            height: 100%;
+            width: 58%;
+            z-index: -1;
+            background: linear-gradient(-270deg, rgba(241, 239, 240, 0) 0%, #F1F0F0 10.79%, #F3F0EF 98.67%);
+        }
     }
 
-    // .offers__title-1
+    // .offers__content
 
-    &__title-1 {
+    &__content {
+        padding: 82px 69px 82px 0px;
+        @include adaptiveValue("padding-top", 82, 28);
+        @include adaptiveValue("padding-bottom", 82, 28);
+        @include adaptiveValue("padding-left", 0, 0);
+        @include adaptiveValue("padding-right", 69, 15);
+     
+       //
+    }
+
+    // .offers__title
+
+    &__title {
         font-family: 'Oswald';
         font-style: normal;
         font-weight: 600;
+        font-size: 48px;
         @include adaptiveValue("font-size", 48, 16);
         line-height: 1.29;
         text-transform: uppercase;
@@ -804,136 +578,211 @@
         max-width: 221px;
         &:not(:last-child) {
             @include adaptiveValue("margin-bottom", 7, 3);
-      
+        
         }
     }
 
     // .offers__text
 
     &__text {
-        font-family: 'Roboto';
-        font-weight: 300;
+        font-family: 'Roboto Light';
+      
         @include adaptiveValue("font-size", 22, 10);
         line-height: 1.68;
         letter-spacing: 0.01em;
         color: #000000;
         &:not(:last-child) {
-            @include adaptiveValue("margin-bottom", 51, 8);
+            @include adaptiveValue("margin-bottom", 50, 8);
         }
     }
 
     // .offers__btn
 
     &__btn {
-       
     }
 
     // .offers__button
 
     &__button {
-        @include adaptiveValue("font-size", 18, 10);
     }
-
-    // .offers__block-2
-
-    &__block-2 {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background: #F6DFD4;
-    }
-
-    // .offers__picture-2
-
-    &__picture-2 {
-        flex: 0 1 81.5%;
-    }
-
-    // .offers__pic-2
-
-    &__pic-2 {
-        position: relative;
-        padding-bottom: 77%;
+    &__image {
         img {
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
+            width: 48%;
+          
             height: 100%;
             object-fit: cover;
+            z-index: -2;
+         
+        }
     }
 }
 
-    // .offers__content-2
+.offers {
 
-    &__content-2 {
-        flex: 0 1 50%;
-        @include adaptiveValue("padding-left", 94, 31);
+    // .offers__box2
+
+    &__box2 {
+        position: relative;
+        display: flex;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 50%;
+            z-index: -1;
+            background: linear-gradient(90deg, #F7E0D5 0%, #F3DCD2 83.85%, rgba(243, 220, 210, 0.14) 100%);
+        }
     }
 
-    // .offers__title-2
+    // .offers__content1
 
-    &__title-2 {
+    &__content1 {
+        @include adaptiveValue("padding-top", 113, 28);
+        @include adaptiveValue("padding-bottom", 113, 28);
+        @include adaptiveValue("padding-left", 94, 31);
+        @include adaptiveValue("padding-right", 0, 0);
+      
+    }
+
+    // .offers__title1
+
+    &__title1 {
         font-family: 'Oswald';
         font-style: normal;
         font-weight: 600;
+        font-size: 48px;
         @include adaptiveValue("font-size", 48, 16);
         line-height: 1.29;
         text-transform: uppercase;
         color: #000000;
-      
         &:not(:last-child) {
             @include adaptiveValue("margin-bottom", 7, 3);
-      
+        
         }
     }
 
-    // .offers__block-3
+    // .offers__text
 
-    &__block-3 {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        background: #E0DED3;
+    &__text {
     }
 
-    // .offers__picture-3
+    // .offers__btn
 
-    &__picture-3 {
+    &__btn {
     }
 
-    // .offers__pic-3
+    // .offers__button
 
-    &__pic-3 {
-         img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: 1;
+    &__button {
     }
+
+    // .offers__image1
+
+    &__image1 {
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60%;
+          
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+         
+        }
     }
-    &__content-3 {
-        padding: 430px 0px 103px 0px;
+}
+.offers {
+
+    // .offers__box3
+
+    &__box3 {
+      position: relative;
+      display: flex;
+      min-height: 100%;
+      @media (max-width: 991.98px) {
+        @include adaptiveValue("margin-bottom", 20, 12);
+        
+      }
+      &::before {
+          content: '';
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          height: 100%;
+          width: 50%;
+          z-index: -2;
+          background: linear-gradient(90deg, #E0DED3 0%, #E0DDD5 86.82%, #E0DDD5 100%);
+      }
     }
-    &__title-3 {
+
+    // .offers__content3
+
+    &__content3 {
+        @include adaptiveValue("padding-top", 430, 127);
+        @include adaptiveValue("padding-bottom", 110, 34);
+        @include adaptiveValue("padding-left", 86 , 27);
+        @include adaptiveValue("padding-right", 0, 0);
+    }
+
+    // .offers__title3
+
+    &__title3 {
         font-family: 'Oswald';
         font-style: normal;
         font-weight: 600;
-        font-size: 96px;
+        @include adaptiveValue("font-size", 96, 26);
         line-height: 1.15;
         text-transform: uppercase;
         color: #131313;
         max-width: 357px;
+        @include adaptiveValue("max-width", 357, 97);
         &:not(:last-child) {
-        margin: 0px 0px 7px 0px;
+            @include adaptiveValue("margin-bottom", 7, 3);
+        
+        }
+    }
+
+    // .offers__text
+
+    &__text {
+    }
+
+    // .offers__btn
+
+    &__btn {
+    }
+
+    // .offers__button
+
+    &__button {
+    }
+
+    // .offers__image3
+
+    &__image3 {
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 80%;
+          
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+         
         }
     }
 }
-.button--transparent {
-}
+
+
+
+
 
 
 // =============================================  shop  ================================================
